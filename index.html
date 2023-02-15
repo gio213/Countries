@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Countries</title>
+    <link rel="icon" type="image/x-icon" href="images/countries.png" />
+    <link rel="stylesheet" href="reset.css" media="screen" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="container">
+      <div class="form">
+        <input
+          class="input"
+          placeholder="Enter country name"
+          required="required"
+          type="text"
+        />
+        <span class="input-border"></span>
+        <div class="error"></div>
+      </div>
+      <button class="button">Search</button>
+      <div class="card">
+        <div class="resultFlag">
+          <img id="img" src="" alt="" />
+        </div>
+        <div class="resultDiv">
+          <ol>
+            <li class="country"></li>
+            <li class="capital"></li>
+            <li class="currencie"></li>
+            <li class="languages"></li>
+            <li class="population"></li>
+            <li class="borders"></li>
+          </ol>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

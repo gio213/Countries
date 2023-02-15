@@ -1,0 +1,263 @@
+body {
+  justify-content: center;
+  align-items: center;
+  overflow-x: clip;
+  width: 100%;
+  height: 100vh;
+
+  font-size: large;
+  font-style: normal;
+  background-color: #e8e8e8;
+}
+
+#container {
+  width: 100%;
+  height: 100%;
+  background-color: #e8e8e8;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 50px;
+  align-items: center;
+  padding: 24px;
+  box-sizing: border-box;
+}
+
+.form {
+  width: 50%;
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.input {
+  font-family: monospace;
+  max-width: 100%;
+  outline: none;
+  border: 1px solid #dadada;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #f3f7fe;
+  transition: 0.3s;
+  color: #3b82f6;
+}
+
+.input::placeholder {
+  color: #3b82f6;
+}
+
+.input:focus {
+  border: 1px solid #3b82f6;
+  box-shadow: 0 0 0 5px #3b83f65f;
+}
+
+.error {
+  color: red;
+  font-size: 10px;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px;
+  display: none;
+
+  font-family: sans-serif;
+}
+
+button {
+  padding: 1.3em 3em;
+  font-size: 12px;
+
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+
+button:hover {
+  background-color: #3b82f6;
+  box-shadow: 0 0 0 5px #3b83f65f;
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+button:active {
+  transform: translateY(-1px);
+}
+
+.card {
+  color: #ffffff;
+  box-sizing: border-box;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  color: #000000d2;
+  font-family: sans-serif;
+  font-weight: bold;
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  background: lightgrey;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 50px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 26px -18px inset;
+  display: none;
+}
+
+.resultDiv {
+  width: 100%;
+  height: 55%;
+  padding: 10px;
+  box-sizing: border-box;
+  overflow: hidden;
+  line-height: 30px;
+}
+
+.resultFlag {
+  width: 100%;
+  height: 50%;
+}
+
+img {
+  object-fit: cover;
+  display: block;
+  overflow: hidden;
+  max-width: 100%;
+  max-height: 100%;
+  border: 2px solid #000000;
+}
+
+li {
+  font-family: monospace;
+  font-size: larger;
+
+  word-break: break-all;
+}
+
+@media screen and (min-width: 425px) {
+  #container {
+    width: 100%;
+    height: 100%;
+  }
+
+  .card {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .resultDiv {
+    width: 95%;
+    height: 55%;
+  }
+
+  .resultFlag {
+    width: 95%;
+    height: 50%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #container {
+    width: 100%;
+    height: 100%;
+  }
+
+  .card {
+    width: 70%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .resultDiv {
+    width: 65%;
+    height: 100%;
+  }
+
+  .resultFlag {
+    width: 65%;
+    height: 100%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #container {
+    width: 100%;
+    height: 100%;
+  }
+
+  .card {
+    width: 70%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .resultDiv {
+    width: 50%;
+    height: 100%;
+  }
+
+  .resultFlag {
+    width: 50%;
+    height: 100%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  #container {
+    width: 100%;
+    height: 100%;
+  }
+
+  .card {
+    width: 50%;
+    height: 500px;
+
+    justify-content: center;
+    align-items: center;
+  }
+
+  .resultDiv {
+    width: 47%;
+    height: 55%;
+  }
+
+  .resultFlag {
+    width: 47%;
+    height: 50%;
+  }
+}
+
+@media screen and (min-width: 1536px) {
+  #container {
+    width: 100%;
+    height: 100%;
+  }
+
+  .card {
+    width: 50%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .resultDiv {
+    width: 50%;
+    height: 100%;
+  }
+
+  .resultFlag {
+    width: 50%;
+    height: 100%;
+  }
+}
